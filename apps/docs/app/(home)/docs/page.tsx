@@ -13,28 +13,28 @@ export default function DocsPage() {
       <div className="mt-8 grid grid-cols-1 gap-4 text-start md:grid-cols-2">
         {[
           {
-            name: 'Fumadocs',
+            name: 'Patientdocs',
             description:
-              'The full-powered documentation framework with an excellent UI.',
+              'The full-powered patient documentation framework with an excellent UI.',
             icon: <Building2 className="size-full" />,
             href: '/docs/ui',
           },
           {
-            name: 'Fumadocs Core',
-            description: 'The core library of Fumadocs.',
+            name: 'Patientdocs Core',
+            description: 'The core library of Patientdocs.',
             icon: <Library className="size-full" />,
             href: '/docs/headless',
           },
           {
-            name: 'Fumadocs MDX',
+            name: 'Patientdocs MDX',
             description:
               'The library for handling MDX in your React.js framework.',
             icon: <Pencil className="size-full" />,
             href: '/docs/mdx',
           },
           {
-            name: 'Fumadocs CLI',
-            description: 'The CLI tool for Fumadocs.',
+            name: 'Patientdocs CLI',
+            description: 'The CLI tool for Patientdocs.',
             icon: <Pencil className="size-full" />,
             href: '/docs/cli',
           },
