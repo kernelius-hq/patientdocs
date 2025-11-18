@@ -72,7 +72,7 @@ export default function Page() {
           </p>
           <h1 className="text-4xl my-8 leading-tighter font-medium xl:text-5xl xl:mb-12">
             Build excellent
-            <br className="md:hidden" /> documentations,
+            <br className="md:hidden" /> documentations for your patients,
             <br />
             your <span className="text-brand">style</span>.
           </h1>
@@ -84,7 +84,7 @@ export default function Page() {
               Getting Started
             </Link>
             <a
-              href="https://codesandbox.io/p/sandbox/github/fuma-nama/fumadocs-ui-template"
+              href="https://codesandbox.io/p/sandbox/github/kernelius-hq/patientdocs-ui-template"
               target="_blank"
               rel="noreferrer noopener"
               className={cn(
@@ -99,21 +99,21 @@ export default function Page() {
       </div>
       <div className="grid grid-cols-1 gap-10 mt-12 px-6 mx-auto w-full max-w-[1400px] md:px-12 lg:grid-cols-2">
         <p className="text-2xl tracking-tight leading-snug font-light col-span-full md:text-3xl xl:text-4xl">
-          Fumadocs is a <span className="text-brand font-medium">React.js</span>{' '}
+          Patientdocs is a <span className="text-brand font-medium">React.js</span>{' '}
           documentation framework for{' '}
           <span className="text-brand font-medium">Developers</span>,
           beautifully designed by{' '}
-          <span className="text-brand font-medium">Fuma Nama</span>. Bringing
-          powerful features for your docs workflows, with high customizability
+          <span className="text-brand font-medium">Kernelius</span>. Bringing
+          powerful features for your patient documentation workflows, with high customizability
           to fit your preferences, works seamlessly with any React.js framework,
-          CMS — anything.
+          CMS — anything, EHRs, supports HL7, FHIR, and more.
         </p>
         <div className="p-8 bg-radial-[circle_at_top_center] from-25% to-brand-secondary/50 rounded-xl col-span-full">
           <h2 className="text-xl text-center text-brand font-mono font-bold uppercase mb-2">
             Try it out.
           </h2>
           <CodeBlock
-            code="pnpm create fumadocs-app"
+            code="pnpm create patientdocs-app"
             lang="bash"
             wrapper={{
               className: 'mx-auto w-full max-w-[800px]',
@@ -151,14 +151,14 @@ function Aesthetics() {
           Minimal aesthetics, Maximum customizability.
         </h3>
         <p className="mb-4">
-          Fumadocs offer well-designed themes, with a headless mode to plug your
+          Patientdocs offer well-designed themes, with a headless mode to plug your
           own UI.
         </p>
         <p className="mb-4">
-          Pro designer? Customise the theme using Fumadocs CLI.
+          Pro designer? Customise the theme using Patientdocs CLI.
         </p>
         <CodeBlock
-          code={`pnpm dlx @fumadocs/cli customise\n\n> Choose a layout to customise...`}
+          code={`pnpm dlx @patientdocs/cli customise\n\n> Choose a layout to customise...`}
           lang="bash"
         />
       </div>
@@ -179,7 +179,7 @@ title: Hello World
 
 ## Overview
 
-I love **Fumadocs**!
+I love **Patientdocs**!
 
 \`\`\`ts tab="Tab 1"
 console.log("Hello World")
@@ -233,7 +233,7 @@ This codeblock shows TypeScript information!
 console.log("Hello World");
 
 // give your code decorations [!code ++]
-const name = "fumadocs";
+const name = "patientdocs";
 \`\`\`
 
 And re-use content:
@@ -322,7 +322,7 @@ const feedback = [
     role: 'Creator of Shadcn UI',
     message: `You know how you end up rebuilding a full docs site every time you start a new project? 
 
-Fumadocs fixes this by giving you all the right blocks that you compose together.
+Patientdocs fixes this by giving you all the right blocks that you compose together.
 
 Like headless docs to build exactly what you need.`,
   },
@@ -330,13 +330,13 @@ Like headless docs to build exactly what you need.`,
     avatar: 'https://avatars.githubusercontent.com/u/35677084',
     user: 'Anthony Shew',
     role: 'Turbo DX at Vercel',
-    message: `Major shoutout to @fuma_nama for making fumadocs, a gorgeous documentation framework that composes beautifully into the App Router.`,
+    message: `Major shoutout to @kernelius-hq for making patientdocs, a gorgeous documentation framework that composes beautifully into the App Router.`,
   },
   {
     user: 'Aiden Bai',
     avatar: 'https://avatars.githubusercontent.com/u/38025074',
     role: 'Creator of Million.js',
-    message: 'fumadocs is the best Next.js docs framework',
+    message: 'patientdocs is the best Next.js docs framework',
   },
   {
     avatar: 'https://avatars.githubusercontent.com/u/10645823',
@@ -490,31 +490,31 @@ function ForEngineers() {
           Separated as <span className="text-brand">Content</span> →{' '}
           <span className="text-brand">Core</span> →{' '}
           <span className="text-brand">UI</span>, offering the high
-          composability that engineers love — you can use Fumadocs as a library,
+          composability that engineers love — you can use Patientdocs as a library,
           without adapting the entire framework.
         </p>
         <div className="mt-auto flex flex-col gap-2 @container mask-[linear-gradient(to_bottom,white,transparent)]">
           {[
             {
-              name: 'fumadocs-mdx',
+              name: 'patientdocs-mdx',
               description: 'Use MDX in your React framework elegantly.',
             },
             {
-              name: 'fumadocs-core',
+              name: 'patientdocs-core',
               description:
                 'Headless library for building docs + handling content.',
             },
             {
-              name: 'fumadocs-ui',
+              name: 'patientdocs-ui',
               description: 'UI library for building docs.',
             },
             {
-              name: 'fumadocs-openapi',
-              description: 'Extend Fumadocs to render OpenAPI docs.',
+              name: 'patientdocs-openapi',
+              description: 'Extend Patientdocs to render OpenAPI docs.',
             },
             {
-              name: 'fumadocs-obsidian',
-              description: 'Extend Fumadocs to handle Obsidian-style Markdown.',
+              name: 'patientdocs-obsidian',
+              description: 'Extend Patientdocs to handle Obsidian-style Markdown.',
             },
           ].map((item) => (
             <div
@@ -535,21 +535,21 @@ function ForEngineers() {
         </h3>
         <p className="mb-4">
           Designed to integrate with any{' '}
-          <span className="text-brand">content source</span>, Fumadocs works on
+          <span className="text-brand">content source</span>, Patientdocs works on
           MDX, Content Collections, and even your own CMS.
         </p>
         <div className="flex flex-row w-fit items-center gap-4 mb-6">
           {[
             {
-              href: 'https://github.com/fuma-nama/fumadocs-basehub',
+              href: 'https://github.com/kernelius-hq/patientdocs-basehub',
               text: 'BaseHub CMS',
             },
             {
-              href: 'https://github.com/fuma-nama/fumadocs-sanity',
+              href: 'https://github.com/kernelius-hq/patientdocs-sanity',
               text: 'Sanity',
             },
             {
-              href: 'https://github.com/MFarabi619/fumadocs-payloadcms',
+              href: 'https://github.com/MFarabi619/patientdocs-payloadcms',
               text: 'Payload CMS',
             },
           ].map((item) => (
@@ -566,14 +566,14 @@ function ForEngineers() {
         </div>
         <CodeBlock
           wrapper={{
-            title: 'Fumadocs MDX',
+            title: 'Patientdocs MDX',
           }}
           code={`
-import { loader } from 'fumadocs-core/source';
-import { docs } from 'fumadocs-mdx:collections/server';
+import { loader } from 'patientdocs-core/source';
+import { docs } from 'patientdocs-mdx:collections/server';
 
 export const source = loader({
-  source: docs.toFumadocsSource(),
+  source: docs.toPatientdocsSource(),
   baseUrl: '/docs',
 });`.trim()}
           lang="ts"
@@ -647,7 +647,7 @@ This is my first document.`}
             The shadcn/ui for docs
           </h3>
           <p className="mb-6">
-            Fumadocs CLI creates interactive components for your docs, offering
+            Patientdocs CLI creates interactive components for your docs, offering
             a rich experience to your users.
           </p>
           <Link
@@ -680,10 +680,10 @@ function Search() {
       </div>
       <div className="border-t p-2">
         {[
-          ['Getting Started', 'Use Fumadocs in your project.'],
+          ['Getting Started', 'Use Patientdocs in your project.'],
           ['Components', 'The UI Components for your docs.'],
           ['MDX Content', 'Using MDX for content.'],
-          ['User Guide', 'How to use Fumadocs.'],
+          ['User Guide', 'How to use Patientdocs.'],
         ].map(([title, description], i) => (
           <div
             key={i}
@@ -733,7 +733,7 @@ function OpenSource() {
           Made Possible by You.
         </h3>
         <p className="mb-8">
-          Fumadocs is 100% powered by passion and open source community.
+          Patientdocs is 100% powered by passion and open source community.
         </p>
         <div className="mb-8 flex flex-row items-center gap-2">
           <Link
@@ -743,7 +743,7 @@ function OpenSource() {
             Sponsors
           </Link>
           <a
-            href="https://github.com/fuma-nama/fumadocs/graphs/contributors"
+            href="https://github.com/kernelius-hq/patientdocs/graphs/contributors"
             rel="noreferrer noopener"
             className={cn(buttonVariants({ variant: 'secondary' }))}
           >
@@ -811,7 +811,7 @@ function OpenSource() {
             Read docs
           </Link>
           <a
-            href="https://github.com/fuma-nama/fumadocs"
+            href="https://github.com/kernelius-hq/patientdocs"
             rel="noreferrer noopener"
             className={cn(
               buttonVariants({
