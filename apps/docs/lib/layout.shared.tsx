@@ -18,11 +18,11 @@ export const linkItems: LinkItemType[] = [
     icon: <LayoutTemplate />,
     active: 'url',
   },
-  {
-    text: 'Sponsors',
-    url: '/sponsors',
-    icon: <Heart />,
-  },
+  // {
+  //   text: 'Sponsors',
+  //   url: '/sponsors',
+  //   icon: <Heart />,
+  // },
   {
     type: 'icon',
     url: 'https://github.com/fuma-nama/fumadocs',
@@ -57,7 +57,7 @@ export function baseOptions(): BaseLayoutProps {
       title: (
         <>
           {logo}
-          <span className="font-medium in-[.uwu]:hidden">Fumadocs</span>
+          <span className="font-medium in-[.uwu]:hidden">Patientdocs</span>
         </>
       ),
     },
